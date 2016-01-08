@@ -46,14 +46,35 @@ class OptionsViewController: UIViewController {
     // MARK: Private methods
     
     func lettersForString(string: String?) -> String? {
-        return string
+        
+        var letters = ""
+        for chr in (string?.characters)! {
+            if ((chr >= "a" && chr <= "z") || (chr >= "A" && chr <= "Z") ) {
+                letters.append(chr)
+            }
+        }
+        return letters
     }
     
     func numbersForString(string: String?) -> String? {
-        return string
+        
+        var letters = ""
+        for chr in (string?.characters)! {
+            if (!(chr >= "a" && chr <= "z") && !(chr >= "A" && chr <= "Z") ) {
+                letters.append(chr)
+            }
+        }
+        return letters
     }
     
     func reverseStringForString(string: String?) -> String? {
-        return string
+        
+        var reverseString = ""
+        
+        for character in (string?.characters.reverse())! {
+            reverseString.append(character)
+        }
+        
+        return reverseString
     }
 }
