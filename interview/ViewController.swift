@@ -10,16 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet var inputTextField: UITextField!
+    @IBOutlet var resultTextField: UITextField!
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier ==  "SendStringSegueIdentifier" {
+            
+            guard let navigationController = segue.destinationViewController as? UINavigationController else {
+                return
+            }
+            
+            guard let optionsController = navigationController.viewControllers.first as? OptionsViewController else {
+                return
+            }
+            
+            optionsController.inputString = self.inputTextField.text
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

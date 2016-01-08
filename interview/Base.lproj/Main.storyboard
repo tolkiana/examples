@@ -22,7 +22,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="giH-aG-1aL">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="giH-aG-1aL">
                                 <rect key="frame" x="123" y="338" width="140" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -37,12 +37,16 @@
                                 <rect key="frame" x="137" y="98" width="46" height="30"/>
                                 <state key="normal" title="Send"/>
                                 <connections>
-                                    <segue destination="tbn-HW-YKj" kind="modal" id="IJN-xB-2mL"/>
+                                    <segue destination="tbn-HW-YKj" kind="modal" identifier="SendStringSegueIdentifier" id="IJN-xB-2mL"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="aPW-UB-0Ne" id="ne3-GE-3pI"/>
+                        <outlet property="resultTextField" destination="giH-aG-1aL" id="8CD-Zf-T5o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,6 +93,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="inputLabel" destination="KWe-BG-tLH" id="7VF-cs-jgr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tci-LJ-z8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
