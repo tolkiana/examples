@@ -13,9 +13,7 @@ class OptionsViewController: UIViewController {
     @IBOutlet var inputLabel: UILabel!
     
     var inputString: String?
-    var lettersString: String?
-    var numbersString: String?
-    var reverseString: String?
+    weak var optionsDelegate: OptionsDelegate?
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -28,25 +26,34 @@ class OptionsViewController: UIViewController {
     }
     
     @IBAction func searchLetters(sender: AnyObject) {
+        let letters = self.lettersForString(self.inputString)
+        self.optionsDelegate?.didSelectLettersString(letters)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func searchNumbers(sender: AnyObject) {
+        let numbers = self.numbersForString(self.inputString)
+        self.optionsDelegate?.didSelectNumbersString(numbers)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func searchReverseString(sender: AnyObject) {
+        let reverseString = self.reverseStringForString(self.inputString)
+        self.optionsDelegate?.didSelectReverseString(reverseString)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     // MARK: Private methods
     
-    func lettersForString(string: String) -> String? {
-        return nil
+    func lettersForString(string: String?) -> String? {
+        return string
     }
     
-    func numbersForString(string: String) -> String? {
-        return nil
+    func numbersForString(string: String?) -> String? {
+        return string
     }
     
-    func reverseStringForString(string: String) -> String? {
-        return nil
+    func reverseStringForString(string: String?) -> String? {
+        return string
     }
 }

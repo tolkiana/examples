@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol OptionsDelegate {
+protocol OptionsDelegate: class {
 
-    func didSelectLettersString(letters: String)
-    func didSelectNumbersString(numbers: String)
-    func didSelectReverseString(string: String)
+    func didSelectLettersString(letters: String?)
+    func didSelectNumbersString(numbers: String?)
+    func didSelectReverseString(string: String?)
 }

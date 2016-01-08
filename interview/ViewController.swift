@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, OptionsDelegate {
 
     @IBOutlet var inputTextField: UITextField!
     @IBOutlet var resultTextField: UITextField!
@@ -25,7 +25,22 @@ class ViewController: UIViewController {
             }
             
             optionsController.inputString = self.inputTextField.text
+            optionsController.optionsDelegate = self
         }
+    }
+    
+    // MARK: OptionsDelegate
+    
+    func didSelectLettersString(letters: String?) {
+        self.resultTextField.text = letters
+    }
+    
+    func didSelectNumbersString(numbers: String?) {
+        self.resultTextField.text = numbers
+    }
+    
+    func didSelectReverseString(string: String?) {
+        self.resultTextField.text = string
     }
 }
 
