@@ -37,7 +37,7 @@
                                 <rect key="frame" x="137" y="98" width="46" height="30"/>
                                 <state key="normal" title="Send"/>
                                 <connections>
-                                    <segue destination="xrn-sl-7N1" kind="modal" id="IJN-xB-2mL"/>
+                                    <segue destination="tbn-HW-YKj" kind="modal" id="IJN-xB-2mL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,29 +61,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMR-oW-gk5">
-                                <rect key="frame" x="116" y="144" width="89" height="27"/>
+                                <rect key="frame" x="116" y="159" width="89" height="27"/>
                                 <state key="normal" title="Letters"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xt-x8-bMO">
-                                <rect key="frame" x="116" y="232" width="89" height="27"/>
+                                <rect key="frame" x="116" y="240" width="89" height="27"/>
                                 <state key="normal" title="Numbers"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoC-kn-dbb">
-                                <rect key="frame" x="116" y="320" width="89" height="27"/>
-                                <state key="normal" title="Reverse"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWe-BG-tLH">
-                                <rect key="frame" x="89" y="42" width="142" height="32"/>
+                                <rect key="frame" x="89" y="81" width="142" height="32"/>
                                 <color key="backgroundColor" red="0.64314770193802917" green="0.78754150199577533" blue="0.91913448952879584" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoC-kn-dbb">
+                                <rect key="frame" x="116" y="315" width="89" height="27"/>
+                                <state key="normal" title="Reverse"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="YXg-cF-VwC">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="Fzd-qj-xwa">
+                            <connections>
+                                <action selector="cancel:" destination="xrn-sl-7N1" id="i53-GF-KbQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tci-LJ-z8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="373"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zhm-0t-7bV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tbn-HW-YKj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iLp-gW-oJH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xrn-sl-7N1" kind="relationship" relationship="rootViewController" id="bEL-ds-FGm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAU-GI-1rS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="477" y="373"/>
         </scene>
