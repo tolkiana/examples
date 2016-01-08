@@ -26,55 +26,21 @@ class OptionsViewController: UIViewController {
     }
     
     @IBAction func searchLetters(sender: AnyObject) {
-        let letters = self.lettersForString(self.inputString)
+        let letters = self.inputString?.letters()
         self.optionsDelegate?.didSelectLettersString(letters)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func searchNumbers(sender: AnyObject) {
-        let numbers = self.numbersForString(self.inputString)
+        let numbers = self.inputString?.numbers()
         self.optionsDelegate?.didSelectNumbersString(numbers)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func searchReverseString(sender: AnyObject) {
-        let reverseString = self.reverseStringForString(self.inputString)
+        let reverseString = self.inputString?.reverseString()
         self.optionsDelegate?.didSelectReverseString(reverseString)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    // MARK: Private methods
-    
-    func lettersForString(string: String?) -> String? {
-        
-        var letters = ""
-        for chr in (string?.characters)! {
-            if ((chr >= "a" && chr <= "z") || (chr >= "A" && chr <= "Z") ) {
-                letters.append(chr)
-            }
-        }
-        return letters
-    }
-    
-    func numbersForString(string: String?) -> String? {
-        
-        var letters = ""
-        for chr in (string?.characters)! {
-            if (!(chr >= "a" && chr <= "z") && !(chr >= "A" && chr <= "Z") ) {
-                letters.append(chr)
-            }
-        }
-        return letters
-    }
-    
-    func reverseStringForString(string: String?) -> String? {
-        
-        var reverseString = ""
-        
-        for character in (string?.characters.reverse())! {
-            reverseString.append(character)
-        }
-        
-        return reverseString
-    }
 }
