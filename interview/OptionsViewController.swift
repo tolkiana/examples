@@ -26,4 +26,27 @@ class OptionsViewController: UIViewController {
     @IBAction func cancel(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func searchLetters(sender: AnyObject) {
+    }
+    
+    @IBAction func searchNumbers(sender: AnyObject) {
+    }
+    
+    @IBAction func searchReverseString(sender: AnyObject) {
+    }
+    
+    // MARK: Private methods
+    
+    func lettersForString(string: String) -> String? {
+        return nil
+    }
+    
+    func numbersForString(string: String) -> String? {
+        return nil
+    }
+    
+    func reverseStringForString(string: String) -> String? {
+        return nil
+    }
 }

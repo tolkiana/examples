@@ -67,10 +67,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMR-oW-gk5">
                                 <rect key="frame" x="116" y="159" width="89" height="27"/>
                                 <state key="normal" title="Letters"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xt-x8-bMO">
-                                <rect key="frame" x="116" y="240" width="89" height="27"/>
-                                <state key="normal" title="Numbers"/>
+                                <connections>
+                                    <action selector="searchLetters:" destination="xrn-sl-7N1" eventType="touchUpInside" id="o1e-R9-RGa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWe-BG-tLH">
                                 <rect key="frame" x="89" y="81" width="142" height="32"/>
@@ -82,6 +81,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoC-kn-dbb">
                                 <rect key="frame" x="116" y="315" width="89" height="27"/>
                                 <state key="normal" title="Reverse"/>
+                                <connections>
+                                    <action selector="searchReverseString:" destination="xrn-sl-7N1" eventType="touchUpInside" id="GxZ-N2-anL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xt-x8-bMO">
+                                <rect key="frame" x="116" y="240" width="89" height="27"/>
+                                <state key="normal" title="Numbers"/>
+                                <connections>
+                                    <action selector="searchNumbers:" destination="xrn-sl-7N1" eventType="touchUpInside" id="IJF-C8-eyt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

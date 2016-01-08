@@ -13,6 +13,7 @@
 		383C830F1C3F3B18000C1767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383C830E1C3F3B18000C1767 /* Assets.xcassets */; };
 		383C83121C3F3B18000C1767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383C83101C3F3B18000C1767 /* LaunchScreen.storyboard */; };
 		383C831C1C3F3E7A000C1767 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383C831B1C3F3E7A000C1767 /* OptionsViewController.swift */; };
+		38FB4F371C3F479900BB13F1 /* OptionsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB4F361C3F479900BB13F1 /* OptionsDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		383C83111C3F3B18000C1767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		383C83131C3F3B18000C1767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		383C831B1C3F3E7A000C1767 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		38FB4F361C3F479900BB13F1 /* OptionsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				383C83071C3F3B18000C1767 /* AppDelegate.swift */,
 				383C831B1C3F3E7A000C1767 /* OptionsViewController.swift */,
+				38FB4F361C3F479900BB13F1 /* OptionsDelegate.swift */,
 				383C83091C3F3B18000C1767 /* ViewController.swift */,
 				383C830B1C3F3B18000C1767 /* Main.storyboard */,
 				383C830E1C3F3B18000C1767 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				383C831C1C3F3E7A000C1767 /* OptionsViewController.swift in Sources */,
 				383C830A1C3F3B18000C1767 /* ViewController.swift in Sources */,
 				383C83081C3F3B18000C1767 /* AppDelegate.swift in Sources */,
+				38FB4F371C3F479900BB13F1 /* OptionsDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
