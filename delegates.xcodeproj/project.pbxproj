@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		383C83041C3F3B18000C1767 /* interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		383C83041C3F3B18000C1767 /* delegates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = delegates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		383C83071C3F3B18000C1767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		383C83091C3F3B18000C1767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		383C830C1C3F3B18000C1767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		383C83051C3F3B18000C1767 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				383C83041C3F3B18000C1767 /* interview.app */,
+				383C83041C3F3B18000C1767 /* delegates.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		383C83031C3F3B18000C1767 /* interview */ = {
+		383C83031C3F3B18000C1767 /* delegates */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 383C83161C3F3B18000C1767 /* Build configuration list for PBXNativeTarget "interview" */;
+			buildConfigurationList = 383C83161C3F3B18000C1767 /* Build configuration list for PBXNativeTarget "delegates" */;
 			buildPhases = (
 				383C83001C3F3B18000C1767 /* Sources */,
 				383C83011C3F3B18000C1767 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = interview;
+			name = delegates;
 			productName = interview;
-			productReference = 383C83041C3F3B18000C1767 /* interview.app */;
+			productReference = 383C83041C3F3B18000C1767 /* delegates.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 383C82FF1C3F3B18000C1767 /* Build configuration list for PBXProject "interview" */;
+			buildConfigurationList = 383C82FF1C3F3B18000C1767 /* Build configuration list for PBXProject "delegates" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				383C83031C3F3B18000C1767 /* interview */,
+				383C83031C3F3B18000C1767 /* delegates */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +264,7 @@
 				INFOPLIST_FILE = interview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tolkiana.interview;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = delegates;
 			};
 			name = Debug;
 		};
@@ -275,14 +275,14 @@
 				INFOPLIST_FILE = interview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tolkiana.interview;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = delegates;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		383C82FF1C3F3B18000C1767 /* Build configuration list for PBXProject "interview" */ = {
+		383C82FF1C3F3B18000C1767 /* Build configuration list for PBXProject "delegates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				383C83141C3F3B18000C1767 /* Debug */,
@@ -291,7 +291,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		383C83161C3F3B18000C1767 /* Build configuration list for PBXNativeTarget "interview" */ = {
+		383C83161C3F3B18000C1767 /* Build configuration list for PBXNativeTarget "delegates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				383C83171C3F3B18000C1767 /* Debug */,
